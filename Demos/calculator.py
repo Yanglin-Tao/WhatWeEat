@@ -21,5 +21,5 @@ class CalculatorController(TGController):
 if __name__ == '__main__':
 	config = AppConfig(minimal = True, root_controller = CalculatorController())
 	application = config.make_wsgi_app()
-	httpd = make_server('',8080, application)
+	httpd = make_server('',8081, application)
 	httpd.serve_forever()
